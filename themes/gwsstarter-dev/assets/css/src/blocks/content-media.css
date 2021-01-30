@@ -1,0 +1,231 @@
+/* @import "../_custom-properties.css"; */
+
+/*--------------------------------------------------------------
+# Block: Content Media
+--------------------------------------------------------------*/
+
+.block-content-media.alignwide {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.block-content-media .content-media .col {
+	margin-bottom: 0;
+}
+
+body,
+html {
+	overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+
+	.home-page-hero {
+		position: relative;
+		height: 42.5em;
+	}
+
+	.home-page-hero .content-media {
+		height: 42.5em;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.block-container .hero-grid {
+		position: absolute;
+		top: -15em;
+		left: -10em;
+	}
+}
+
+.hero-grid {
+	margin: 1em;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	height: 19em;
+	width: 35em;
+	margin-top: -2em;
+}
+
+@media (min-width: 768px) {
+
+	.hero-grid {
+		margin-top: inherit;
+		grid-gap: 3.125em;
+		height: 57.5em;
+		width: 106em;
+	}
+}
+
+.squircle {
+	height: 3em;
+	width: 3em;
+	background: #000;
+	border-radius: 1em;
+	opacity: 0;
+	transform: scale(0.75);
+	animation: appear 1500ms normal forwards cubic-bezier(0.34, 1, 0.5, 1);
+	animation-play-state: paused;
+	will-change: opacity transform;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+
+	.squircle {
+		height: 9em;
+		width: 9em;
+		border-radius: 2.5em;
+	}
+}
+
+.squircle--red {
+	background: #d34747;
+}
+
+.squircle--mustard {
+	background: #d3a447;
+}
+
+.squircle--green {
+	background: #2b7e7e;
+}
+
+.squircle--video {
+	height: 100%;
+	width: 100%;
+	grid-column: 2/4;
+	grid-row: 3/-1;
+	overflow: hidden;
+}
+
+.squircle--video img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.squircle--icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.squircle--icon svg {
+	height: 1.5em;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+
+	.squircle--icon svg {
+		height: initial;
+	}
+}
+
+.squircle--image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+@keyframes appear {
+
+	0% {
+		transform: scale(0.9);
+		opacity: 0;
+	}
+
+	50% {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.animated-arrow-icon path[data-animate-path] {
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+.animated-arrow-icon .animated-arrow-icon__line {
+	animation: animatePath 600ms ease-out 1200ms;
+}
+
+.animated-arrow-icon .animated-arrow-icon__arrow {
+	animation: animatePath 300ms ease-out 1750ms;
+}
+
+@keyframes animatePath {
+
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+.animated-group-icon .animated-group-icon__front {
+	transform: translate(4px, 40px);
+	animation: groupPopup 500ms cubic-bezier(0, 1, 0.5, 1) 2000ms, groupShow 500ms ease 2700ms;
+	animation-fill-mode: forwards;
+}
+
+.animated-group-icon .animated-group-icon__back {
+	opacity: 0;
+	transform: translateX(-4px);
+	animation: groupPopupBack 2700ms, groupShow 500ms ease-out 2700ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes groupPopup {
+
+	100% {
+		transform: translate(4px, 0);
+	}
+}
+@keyframes groupPopupBack {
+
+	0% {
+		opacity: 0;
+	}
+
+	99.9% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes groupShow {
+
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.diagonal-background {
+	position: absolute;
+	top: 95%;
+	left: 0;
+	width: 100vw;
+	height: 62.5%;
+	background: #f6f6f6;
+	-webkit-transform: translate(0, -50%) skew(0deg, -10deg);
+	-ms-transform: translate(0, -50%) skew(0deg, -10deg);
+	transform: translate(0, -50%) skew(0deg, -10deg);
+	z-index: -5;
+}

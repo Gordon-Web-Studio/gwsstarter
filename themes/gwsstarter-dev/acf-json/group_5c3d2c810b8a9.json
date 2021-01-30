@@ -1,0 +1,207 @@
+{
+    "key": "group_5c3d2c810b8a9",
+    "title": "Component - Button",
+    "fields": [
+        {
+            "key": "field_5e06b4762da47",
+            "label": "<i class=\"fas fa-link\"><\/i>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d6e88744f70f",
+            "label": "Link",
+            "name": "button_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5e06b4852da48",
+            "label": "<i class=\"fas fa-sliders-h\"><\/i>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5d6e88744f70f",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d6e88b04f710",
+            "label": "Style",
+            "name": "button_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "btn-primary": "Primary",
+                "btn-secondary": "Secondary",
+                "btn-white": "White",
+                "btn-outline-primary": "Outline Primary",
+                "btn-outline-secondary": "Outline Secondary",
+                "btn-outline-white": "Outline White"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d6e88da4f711",
+            "label": "Size",
+            "name": "button_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "btn-sm": "Small",
+                "btn-lg": "Large",
+                "btn-long": "Long",
+                "btn-short": "Short"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e2cb5ab06a77",
+            "label": "Select Icon",
+            "name": "icon",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5e2cb247b6409",
+                    "label": "Icon",
+                    "name": "icon_class",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "fal fa-long-arrow-right": "<i class=\"fal fa-long-arrow-right\"><\/i> long-arrow-right",
+                        "fal fa-angle-right": "<i class=\"fal fa-angle-right\"><\/i> angle-right",
+                        "fal fa-chevron-circle-right": "<i class=\"fal fa-chevron-circle-right\"><\/i> chevron-circle-right",
+                        "fal fa-arrow-circle-right": "<i class=\"fal fa-arrow-circle-right\"><\/i> arrow-circle-right"
+                    },
+                    "default_value": [],
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5e2cb2deb640a",
+                    "label": "Icon Position",
+                    "name": "icon_position",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5e2cb247b6409",
+                                "operator": "!=empty"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "left": "Left",
+                        "right": "Right"
+                    },
+                    "allow_null": 0,
+                    "default_value": "left",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1579988953
+}

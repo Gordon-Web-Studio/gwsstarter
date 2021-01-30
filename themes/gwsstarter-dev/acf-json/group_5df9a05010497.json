@@ -1,0 +1,169 @@
+{
+    "key": "group_5df9a05010497",
+    "title": "Theme Settings",
+    "fields": [
+        {
+            "key": "field_5dfd91122668e",
+            "label": "Shape Dividers",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5df9a1abdb17e",
+            "label": "Shape Dividers",
+            "name": "shape_dividers",
+            "type": "repeater",
+            "instructions": "Add a title to each shape and its SVG code. This list will populate shape divider select field on ACF Blocks. If you want to dynamically color the shape from ACF Blocks, we suggest to add a `shape-divider` css class (Ex. `class=\"shape-divider\"`) to add color via `fill` property or add a `{$block_id}` prefix (Ex. `id=\"{$block_id}-svg-current-ids\"`) to add gradient color to transparent via `stop-color` property, and inherit any color selected from block options.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5df9a243db17f",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add SVG Shape",
+            "sub_fields": [
+                {
+                    "key": "field_5df9a243db17f",
+                    "label": "Shape Title",
+                    "name": "shape_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5df9a403db180",
+                    "label": "SVG Code",
+                    "name": "svg_code",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5e2cc9a8e15aa",
+            "label": "Font Awesome Kit",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e2cc8ece15a9",
+            "label": "Font Awesome Kit ID",
+            "name": "font_awesome_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e2cc9e7e15ac",
+            "label": "Google Map API Key",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e2cc9d3e15ab",
+            "label": "Google Map API Key",
+            "name": "google_map_api_key",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-helpers"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610064792
+}

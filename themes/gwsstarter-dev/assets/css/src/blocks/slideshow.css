@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+# Block: Slideshow
+--------------------------------------------------------------*/
+
+.block-slideshow {
+	padding-top: 0;
+	padding-bottom: 0;
+	align-items: center;
+
+	&.alignwide {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	& .slideshow-container {
+		position: relative;
+	}
+
+	& .slideshow-container,
+	& .block-slide {
+		width: 100%;
+	}
+
+	& .slideshow-container,
+	& .slide,
+	& .slick-list,
+	& .slick-track,
+	& .slide-wrapper {
+		height: 100%;
+	}
+
+	& .slide {
+		position: relative;
+		display: inline-flex;
+		text-align: left;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+.block-slideshow.preset-2 {
+
+	& .slick-slider {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	& .slick-list {
+		order: -1;
+		width: 100%;
+		flex-shrink: 0;
+	}
+
+	& .slick-prev,
+	& .slick-next {
+		margin: 1rem;
+		position: relative;
+		top: auto;
+	}
+
+	& .slick-prev svg,
+	& .slick-next svg {
+		width: 0.75rem;
+	}
+
+	& .slick-prev {
+		order: 1;
+		left: auto;
+		margin-left: 3rem;
+		transform: none;
+	}
+
+	& .slick-next {
+		order: 3;
+		right: auto;
+		transform: none;
+	}
+
+	& .slick-dots {
+		order: 2;
+		position: relative;
+		margin: 0.75rem 0;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		left: auto;
+		bottom: auto;
+		transform: none;
+
+		& li button::before {
+			opacity: 1;
+		}
+
+		& li.slick-active button::before {
+			opacity: 1;
+			color: theme("colors.tertiary");
+		}
+	}
+}

@@ -1,0 +1,185 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body {
+
+	@apply font-sans text-base text-black bg-white;
+}
+
+.has-sm-font-size {
+
+	@apply text-sm;
+}
+
+.has-base-font-size {
+
+	@apply text-base;
+}
+
+p.large,
+.has-lg-font-size {
+
+	@apply text-lg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+
+	@apply font-heading font-bold mt-0 mb-4 clear-both;
+
+	&.alt {
+
+		@apply font-light;
+	}
+}
+
+/* Default headings */
+
+h1,
+.h1,
+.has-h-1-font-size {
+
+	@apply text-fs3 lg:text-fs2 xl:text-fs1;
+}
+
+h2,
+.h2,
+.has-h-2-font-size {
+
+	@apply text-fs3 lg:text-fs2;
+}
+
+h3,
+.h3,
+.has-h-3-font-size {
+
+	@apply text-fs4 lg:text-fs3;
+}
+
+h4,
+.h4,
+.has-h-4-font-size {
+
+	@apply text-fs5 lg:text-fs4;
+}
+
+h5,
+.h5,
+.has-h-5-font-size {
+
+	@apply text-fs5;
+}
+
+.is-style-alt {
+	font-weight: 300;
+}
+
+strong {
+
+	@apply font-bold;
+}
+
+cite,
+small {
+
+	@apply text-sm;
+}
+
+.entry-header h1.entry-title,
+.page-header .page-title {
+
+	@apply text-fs3 my-4;
+}
+
+dfn,
+cite,
+em,
+i {
+
+	@apply italic;
+}
+
+blockquote {
+
+	@apply mt-0 mb-6 mx-6 py-3 text-fs4 border-l-2 border-solid border-primary;
+
+	& > * {
+
+		@apply mx-5;
+	}
+
+	& p {
+
+		@apply mb-2;
+	}
+
+	& small,
+	& cite {
+
+		@apply text-primary;
+	}
+
+	& cite {
+
+		@apply text-fs3 mt-4 relative;
+	}
+}
+
+@screen sm {
+
+	.entry-content > blockquote {
+
+		@apply ml-auto;
+	}
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+/* stylelint-disable */
+pre {
+	background: #eeeeee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.5em;
+	margin: 1.5em 0;
+	white-space: pre;
+}
+/* stylelint-enable */
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 0.8rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

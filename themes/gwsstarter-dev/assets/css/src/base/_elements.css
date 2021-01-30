@@ -1,0 +1,150 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+/* stylelint-disable no-duplicate-selectors */
+
+hr {
+	background-color: #e2e8f0;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+sup,
+sub {
+	line-height: 0;
+}
+
+pre {
+	margin: 1.5em 0;
+	white-space: pre;
+}
+
+code:not([class*="language-"]) {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #b69eeb;
+	background-color: #4e2c8c;
+	border-radius: 4px;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+
+	background-color: #202038;
+	line-height: 0.8;
+}
+
+cite {
+	font-style: italic;
+}
+
+button {
+	color: inherit;
+}
+
+ul,
+ol {
+	margin-top: 0;
+
+	& li {
+		line-height: 1.5;
+	}
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dl {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 670px;
+
+	& > * {
+		padding-top: 0.5em;
+	}
+}
+
+dt {
+	width: 30%;
+	font-weight: 700;
+	text-align: left;
+
+	& + dt {
+		padding-right: 60%;
+
+		& + dd {
+			margin-top: -1.625em; /* own height including padding */
+			padding-left: calc(30% + 1em);
+		}
+	}
+}
+
+dd {
+	width: 60%;
+	padding-left: 1em;
+	margin-left: 0;
+
+	& + dd {
+		width: 100%;
+		padding-left: calc(30% + 1em);
+	}
+}
+
+table {
+	margin-bottom: 1rem;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	font-weight: 700;
+}
+
+th,
+td,
+caption {
+	padding: 4px 10px 4px 5px;
+}
+
+tfoot {
+	font-style: italic;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+/* Extra wide images within figure tags don't overflow the content area. */
+
+figure {
+	margin: 0;
+}
+
+a > *,
+button > *,
+.button > * {
+	pointer-events: none;
+}
+
+section,
+nav {
+	display: block;
+}
+
+/* stylelint-enable no-duplicate-selectors */

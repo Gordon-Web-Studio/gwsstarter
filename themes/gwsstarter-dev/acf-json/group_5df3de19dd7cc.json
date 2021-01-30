@@ -1,0 +1,334 @@
+{
+    "key": "group_5df3de19dd7cc",
+    "title": "Component - Background Settings",
+    "fields": [
+        {
+            "key": "field_5df3de19e09cd",
+            "label": "Background Media",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5df3de19e09eb",
+            "label": "Background Type",
+            "name": "background_type",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image": "<i class=\"fas fa-image\"><\/i>",
+                "video": "<i class=\"fas fa-video\"><\/i>"
+            },
+            "allow_null": 1,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5df3de19e0a33",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e09eb",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.5",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f4c064f2baf2",
+            "label": "Background Image URL",
+            "name": "background_image_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e09eb",
+                        "operator": "==",
+                        "value": "image"
+                    },
+                    {
+                        "field": "field_5df3de19e0a33",
+                        "operator": "==empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter external image URL"
+        },
+        {
+            "key": "field_5df3de19e0b9e",
+            "label": "Background Video mp4",
+            "name": "background_video",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e09eb",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4"
+        },
+        {
+            "key": "field_5df522d91088f",
+            "label": "Background Video webm (optional)",
+            "name": "background_video_webm",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e09eb",
+                        "operator": "==",
+                        "value": "video"
+                    },
+                    {
+                        "field": "field_5df3de19e0b9e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "webm"
+        },
+        {
+            "key": "field_5df5233b10890",
+            "label": "Background Video Title",
+            "name": "background_video_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e09eb",
+                        "operator": "==",
+                        "value": "video"
+                    },
+                    {
+                        "field": "field_5df3de19e0b9e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5df3de19e0bbc",
+            "label": "Video Image Placeholder",
+            "name": "video_placeholder",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e09eb",
+                        "operator": "==",
+                        "value": "video"
+                    },
+                    {
+                        "field": "field_5df3de19e0b9e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "0.5",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5df3de19e0aab",
+            "label": "Object Fit in container",
+            "name": "background_object_fit",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e0a33",
+                        "operator": "!=empty"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5df3de19e0b9e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cover": "Cover",
+                "contain": "Contain",
+                "fill": "Fill",
+                "scale-down": "Scale Down",
+                "none": "None"
+            },
+            "default_value": "cover",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5df3de19e0a51",
+            "label": "Object Position in container",
+            "name": "background_object_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de19e0a33",
+                        "operator": "!=empty"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5df3de19e0b9e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center center": "Center Center",
+                "center left": "Center Left",
+                "center right": "Center Right",
+                "top center": "Top Center",
+                "top left": "Top Left",
+                "top right": "Top Right",
+                "bottom center": "Bottom Center",
+                "bottom left": "Bottom Left",
+                "bottom right": "Bottom Right"
+            },
+            "default_value": "center center",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1606204263
+}

@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+.ui-media {
+	display: table;
+	width: 100%;
+}
+
+.media-image,
+.media-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.media-bottom {
+
+	& .media-image,
+	& .media-content {
+		vertical-align: bottom;
+	}
+}
+
+.media-top {
+
+	& .media-image,
+	& .media-content {
+		vertical-align: top;
+	}
+}
+
+.media-image {
+	padding-right: var(--spacer);
+
+	& > img {
+		display: block;
+		max-width: none;
+	}
+}
+
+.media-rev .media-image {
+	padding-right: 0;
+	padding-left: var(--spacer);
+}
+
+.media-content {
+	width: 100%;
+}

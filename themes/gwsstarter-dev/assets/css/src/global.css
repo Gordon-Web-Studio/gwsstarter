@@ -1,0 +1,22 @@
+/* Base */
+
+@import "tailwindcss/base";
+@import "base/_typography.css";
+@import "base/_body.css";
+@import "base/_elements.css";
+@import "base/_links.css";
+@import "base/_accessibility.css";
+@import "base/_base.css";
+@import "base/_container.css";
+
+/* Components */
+
+@import "tailwindcss/components";
+@import "components/_buttons.css";
+@import "components/_ui-media.css";
+@import "components/_ui-media-container.css";
+@import "components/_blocks.css";
+
+/* Utilities */
+
+@import "tailwindcss/utilities";

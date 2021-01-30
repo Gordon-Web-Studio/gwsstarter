@@ -1,0 +1,11 @@
+@import "_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Block: Brands and Logos
+--------------------------------------------------------------*/
+.block-brands-logos {
+
+	&:not(.has-background) {
+		background-color: var(--color-gray-light);
+	}
+}

@@ -1,0 +1,550 @@
+{
+    "key": "group_5e053e285abb3",
+    "title": "Component - Animation Preset Instances",
+    "fields": [
+        {
+            "key": "field_5e053c4afe7f6",
+            "label": "Preset Instances",
+            "name": "preset_instances",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5e053c5eb13fd": {
+                    "key": "layout_5e053c5eb13fd",
+                    "name": "lazy",
+                    "label": "lazy",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e053c30fe7f5",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e053eff824d4": {
+                    "key": "layout_5e053eff824d4",
+                    "name": "eager",
+                    "label": "eager",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e053eff824d5",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e053f0c824d6": {
+                    "key": "layout_5e053f0c824d6",
+                    "name": "spin",
+                    "label": "spin",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e053f0c824d7",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 360,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e053f19824d8": {
+                    "key": "layout_5e053f19824d8",
+                    "name": "spinRev",
+                    "label": "spinRev",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e053f19824d9",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 360,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058205085bf": {
+                    "key": "layout_5e058205085bf",
+                    "name": "spinIn",
+                    "label": "spinIn",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058206085c0",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 360,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058213085c1": {
+                    "key": "layout_5e058213085c1",
+                    "name": "spinOut",
+                    "label": "spinOut",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058213085c2",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 360,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058219085c3": {
+                    "key": "layout_5e058219085c3",
+                    "name": "blurInOut",
+                    "label": "blurInOut",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058219085c4",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e05823e085c5": {
+                    "key": "layout_5e05823e085c5",
+                    "name": "blurIn",
+                    "label": "blurIn",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e05823e085c6",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e05824c085c7": {
+                    "key": "layout_5e05824c085c7",
+                    "name": "blurOut",
+                    "label": "blurOut",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e05824c085c8",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058258085c9": {
+                    "key": "layout_5e058258085c9",
+                    "name": "fadeInOut",
+                    "label": "fadeInOut",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058265085cb": {
+                    "key": "layout_5e058265085cb",
+                    "name": "fadeIn",
+                    "label": "fadeIn",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058269085cd": {
+                    "key": "layout_5e058269085cd",
+                    "name": "fadeOut",
+                    "label": "fadeOut",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058271085cf": {
+                    "key": "layout_5e058271085cf",
+                    "name": "driftLeft",
+                    "label": "driftLeft",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058271085d0",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058285085d1": {
+                    "key": "layout_5e058285085d1",
+                    "name": "driftRight",
+                    "label": "driftRight",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058285085d2",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058290085d3": {
+                    "key": "layout_5e058290085d3",
+                    "name": "leftToRight",
+                    "label": "leftToRight",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058290085d4",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": "%"
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e05829f085d5": {
+                    "key": "layout_5e05829f085d5",
+                    "name": "rightToLeft",
+                    "label": "rightToLeft",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e05829f085d6",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": "%"
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e0582a7085d7": {
+                    "key": "layout_5e0582a7085d7",
+                    "name": "zoomInOut",
+                    "label": "zoomInOut",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e0582a7085d8",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": "%"
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e0582ae085d9": {
+                    "key": "layout_5e0582ae085d9",
+                    "name": "zoomIn",
+                    "label": "zoomIn",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e0582ae085da",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": "%"
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e0582b5085db": {
+                    "key": "layout_5e0582b5085db",
+                    "name": "zoomOut",
+                    "label": "zoomOut",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e0582b5085dc",
+                            "label": "Value",
+                            "name": "value",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": 100,
+                            "step": "",
+                            "prepend": "",
+                            "append": "%"
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                }
+            },
+            "button_label": "Add Preset Animation",
+            "min": 1,
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1577420001
+}

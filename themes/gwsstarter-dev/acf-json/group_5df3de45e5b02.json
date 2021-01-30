@@ -1,0 +1,438 @@
+{
+    "key": "group_5df3de45e5b02",
+    "title": "Component - Overlay Settings",
+    "fields": [
+        {
+            "key": "field_5df3de45ea02f",
+            "label": "Background Overlay",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5df3de45ea04d",
+            "label": "Type",
+            "name": "overlay_type",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "color": "<i class=\"fas fa-paint-brush\"><\/i>",
+                "gradient": "<i class=\"fas fa-palette\"><\/i>"
+            },
+            "allow_null": 1,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5df3de45ea06b",
+            "label": "Color",
+            "name": "overlay_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5df3de45ea089",
+            "label": "1st Color",
+            "name": "overlay_1st_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5ede8fd9ed3ae",
+            "label": "1st Color Alpha",
+            "name": "overlay_1st_color_alpha",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": "",
+            "max": "",
+            "step": 5,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5df3de45ea0a7",
+            "label": "1st Color Location",
+            "name": "overlay_1st_color_location",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "min": 5,
+            "max": "",
+            "step": 5,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5df3de45ea0c5",
+            "label": "2nd Color",
+            "name": "overlay_2nd_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5ede9001ed3af",
+            "label": "2nd Color Alpha",
+            "name": "overlay_2nd_color_alpha",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": "",
+            "max": "",
+            "step": 5,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5df3de45ea0e3",
+            "label": "2nd Color Location",
+            "name": "overlay_2nd_color_location",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": 5,
+            "max": "",
+            "step": 5,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5df3de45ea101",
+            "label": "Gradient Type",
+            "name": "overlay_gradient_type",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "linear": "<i class=\"fas fa-grip-lines\"><\/i>",
+                "radial": "<i class=\"fas fa-circle-notch\"><\/i>"
+            },
+            "allow_null": 0,
+            "default_value": "linear",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5df3de45ea11f",
+            "label": "Gradient Angle",
+            "name": "overlay_gradient_angle",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    },
+                    {
+                        "field": "field_5df3de45ea101",
+                        "operator": "==",
+                        "value": "linear"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 180,
+            "min": 0,
+            "max": 360,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5df3de45ea13d",
+            "label": "Gradient Position",
+            "name": "overlay_gradient_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "==",
+                        "value": "gradient"
+                    },
+                    {
+                        "field": "field_5df3de45ea101",
+                        "operator": "==",
+                        "value": "radial"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center center": "Center Center",
+                "center left": "Center Left",
+                "center right": "Center Right",
+                "top center": "Top Center",
+                "top left": "Top Left",
+                "top right": "Top Right",
+                "bottom center": "Bottom Center",
+                "bottom left": "Bottom Left",
+                "bottom right": "Bottom Right"
+            },
+            "default_value": "center center",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5df3de45ea15c",
+            "label": "Opacity",
+            "name": "overlay_opacity",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 40,
+            "min": "",
+            "max": "",
+            "step": 5,
+            "prepend": "",
+            "append": "%"
+        },
+        {
+            "key": "field_5df3de45ea17a",
+            "label": "Blend Mode",
+            "name": "overlay_blend_mode",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5df3de45ea04d",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "multiply": "Multiply",
+                "screen": "Screen",
+                "overlay": "Overlay",
+                "darken": "Darken",
+                "lighten": "Lighten",
+                "color-dodge": "Color Dodge",
+                "saturation": "Saturation",
+                "color": "Color",
+                "luminosity": "Luminosity"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ede8ec0f8337",
+            "label": "Custom Overlay Selector",
+            "name": "custom_overlay_selector",
+            "type": "text",
+            "instructions": "Add a custom overlay selector. <br>Ex: <i>.custom-class<\/i> or <i>#custom-id<\/i>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1609214072
+}

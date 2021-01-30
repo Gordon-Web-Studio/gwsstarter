@@ -1,0 +1,137 @@
+/* Base */
+
+@import "tailwindcss/base";
+@import "../base/_typography.css";
+@import "../base/_body.css";
+@import "../base/_elements.css";
+@import "../base/_links.css";
+@import "../base/_accessibility.css";
+@import "../base/_base.css";
+@import "../base/_container.css";
+
+/* Components */
+
+@import "tailwindcss/components";
+@import "../components/_buttons.css";
+@import "../components/_ui-media.css";
+@import "../components/_ui-media-container.css";
+@import "../components/_wordpress.css";
+@import "../components/_blocks.css";
+
+/* Utilities */
+
+@import "tailwindcss/utilities";
+
+/* Content styles */
+
+@import "../content.css";
+
+/* Main Layout */
+
+@import "../layouts/layout-main.css";
+
+/*--------------------------------------------------------------
+# Adjustments for the editor
+--------------------------------------------------------------*/
+
+/* stylelint-disable no-duplicate-selectors */
+
+body {
+
+	@apply font-sans text-base text-black;
+}
+
+button,
+select,
+option {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	border-radius: inherit;
+}
+
+/* stylelint-enable no-duplicate-selectors */
+
+.l-block.is-admin {
+	z-index: 0;
+}
+
+.block-editor-writing-flow {
+
+	@apply font-sans text-base text-black;
+	z-index: -5;
+}
+
+.editor-post-title__input {
+
+	@apply font-heading text-fs3 my-0;
+}
+
+.gallery .gallery-item,
+.wp-block-freeform .gallery .gallery-item {
+	width: auto;
+}
+
+/* Main column width */
+
+.wp-block {
+	--wp-block-max-width: theme("screens.lg");
+	max-width: calc(var(--wp-block-max-width) + 30px);
+}
+
+/* Width of "wide" blocks */
+
+.wp-block[data-align="wide"] {
+	--wp-block-max-width: theme("screens.lg");
+	max-width: calc(50% + var(--wp-block-max-width) / 2 + 76px);
+}
+
+/* Width of "full-wide" blocks */
+
+.wp-block[data-align="full"] {
+	max-width: initial;
+}
+
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover h4 {
+	color: inherit;
+}
+
+.wp-block-cover .wp-block-cover-text {
+
+	@apply text-fs4;
+}
+
+.wp-block-archives,
+.wp-block-categories__list,
+.wp-block-latest-posts,
+.wp-block-latest-comments {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-block-latest-comments {
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+}
+
+/* Set native block background z-index 0 only on editor */
+
+.has-background {
+	z-index: 0;
+}
+
+/* Set button with style properties to display inline-block */
+
+[class^="is-style"] .wp-block-button {
+	margin-right: 8px;
+}
+
+/* Fix buttons alignment */
+
+.wp-block-buttons [class^="is-style"],
+.wp-block-buttons div[class] {
+	display: inline-flex;
+}

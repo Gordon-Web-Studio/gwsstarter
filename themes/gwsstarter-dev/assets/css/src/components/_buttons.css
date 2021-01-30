@@ -1,0 +1,476 @@
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.wp-block-buttons.alignleft,
+.wp-block-buttons.alignright {
+	float: initial;
+}
+
+/* Default Button */
+
+.ui-btn,
+[class="submit"],
+.wp-block-button__link {
+
+	@apply relative inline-flex items-center justify-items-center h-12 mb-0 py-2 px-5 outline-none border-solid border rounded no-underline font-heading font-bold leading-normal text-sm tracking-wide whitespace-nowrap align-middle select-none cursor-pointer;
+	touch-action: manipulation;
+
+	&,
+	&:visited {
+
+		@apply border-gray-300 bg-gray-300 text-gray-700;
+	}
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.is_active {
+
+		@apply border-gray-700 bg-gray-700 text-gray-100;
+	}
+
+	&:disabled,
+	&.is_disabled {
+
+		@apply opacity-50 cursor-not-allowed;
+	}
+
+	& > i,
+	& > svg {
+
+		@apply mx-3;
+	}
+}
+
+.block-buttons {
+
+	@apply flex flex-col justify-center items-center;
+
+	& .ui-btn {
+
+		@apply w-full flex mb-4;
+	}
+
+	& .ui-btn:last-child {
+
+		@apply mb-0;
+	}
+}
+
+@media md {
+
+	.block-buttons {
+
+		@apply inline-flex flex-row w-auto justify-start;
+
+		& .ui-btn {
+
+			@apply w-auto inline-flex mb-0 mr-4;
+		}
+
+		& .ui-btn:last-child {
+
+			@apply mr-0;
+		}
+	}
+}
+
+/* button styles. */
+
+/* primary */
+
+.btn-primary,
+.btn-primary:visited,
+.is-style-solid-primary .wp-block-button__link,
+.is-style-solid-primary .wp-block-button__link:visited {
+
+	@apply border-primary bg-primary text-white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.is_active,
+.is-style-solid-primary .wp-block-button__link:hover,
+.is-style-solid-primary .wp-block-button__link:focus,
+.is-style-solid-primary .wp-block-button__link:active,
+.is-style-solid-primary .wp-block-button__link.is_active {
+
+	@apply border-primary-dark bg-primary-dark text-white;
+}
+
+/* primary-light */
+
+.btn-primary-light,
+.btn-primary-light:visited,
+.is-style-solid-primary-light .wp-block-button__link,
+.is-style-solid-primary-light .wp-block-button__link:visited {
+
+	@apply border-primary-light bg-primary-light text-primary-dark;
+}
+
+.btn-primary-light:hover,
+.btn-primary-light:focus,
+.btn-primary-light:active,
+.btn-primary-light.is_active,
+.is-style-solid-primary-light .wp-block-button__link:hover,
+.is-style-solid-primary-light .wp-block-button__link:focus,
+.is-style-solid-primary-light .wp-block-button__link:active,
+.is-style-solid-primary-light .wp-block-button__link.is_active {
+
+	@apply border-primary-dark bg-primary-dark text-white;
+}
+
+/* white */
+
+.btn-white,
+.btn-white:visited,
+.is-style-solid-white .wp-block-button__link,
+.is-style-solid-white .wp-block-button__link:visited {
+
+	@apply border-white bg-white text-primary;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.is_active,
+.is-style-solid-white .wp-block-button__link:hover,
+.is-style-solid-white .wp-block-button__link:focus,
+.is-style-solid-white .wp-block-button__link:active,
+.is-style-solid-white .wp-block-button__link.is_active {
+
+	@apply border-gray-100 bg-gray-100 text-primary;
+}
+
+/* black */
+
+.btn-black,
+.btn-black:visited,
+.is-style-solid-black .wp-block-button__link,
+.is-style-solid-black .wp-block-button__link:visited {
+
+	@apply border-gray-900 bg-gray-900 text-white;
+}
+
+.btn-black:hover,
+.btn-black:focus,
+.btn-black:active,
+.btn-black.is_active,
+.is-style-solid-black .wp-block-button__link:hover,
+.is-style-solid-black .wp-block-button__link:focus,
+.is-style-solid-black .wp-block-button__link:active,
+.is-style-solid-black .wp-block-button__link.is_active {
+
+	@apply border-gray-100 bg-gray-100 text-black;
+}
+
+
+/* outline-primary */
+
+.btn-outline-primary,
+.btn-outline-primary:visited,
+.is-style-outline-primary .wp-block-button__link,
+.is-style-outline-primary .wp-block-button__link:visited {
+
+	@apply border-primary bg-transparent text-primary;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.is_active,
+.is-style-outline-primary .wp-block-button__link:hover,
+.is-style-outline-primary .wp-block-button__link:focus,
+.is-style-outline-primary .wp-block-button__link:active,
+.is-style-outline-primary .wp-block-button__link.is_active {
+
+	@apply border-primary-dark bg-primary-dark text-white;
+}
+
+/* outline-white */
+
+.btn-outline-white,
+.btn-outline-white:visited,
+.is-style-outline-white .wp-block-button__link,
+.is-style-outline-white .wp-block-button__link:visited {
+
+	@apply border-gray-100 bg-transparent text-gray-100;
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:focus,
+.btn-outline-white:active,
+.btn-outline-white.is_active,
+.is-style-outline-white .wp-block-button__link:hover,
+.is-style-outline-white .wp-block-button__link:focus,
+.is-style-outline-white .wp-block-button__link:active,
+.is-style-outline-white .wp-block-button__link.is_active {
+
+	@apply border-gray-100 bg-gray-100 text-black;
+}
+
+/* Button sizes. */
+
+.btn-sm,
+.wp-block-button.btn-sm .wp-block-button__link {
+	padding: 0.5rem 1rem;
+	font-size: 13px;
+	height: auto;
+}
+
+.btn-md,
+.wp-block-button.btn-md .wp-block-button__link {
+	padding: 10px 20px;
+	font-size: 15px;
+	height: auto;
+
+	@screen sm {
+		padding: 10px 40px;
+		height: 60px;
+	}
+}
+
+.btn-lg,
+.wp-block-button.btn-lg .wp-block-button__link {
+	padding: 15px 25px;
+	font-size: 16px;
+	height: auto;
+
+	@screen sm {
+		padding: 10px 60px;
+		height: 70px;
+	}
+}
+
+.btn-short,
+.wp-block-button.btn-short .wp-block-button__link {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.btn-long,
+.wp-block-button.btn-long .wp-block-button__link {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+/* Button pill. */
+
+.btn-pill {
+
+	@apply rounded-full;
+}
+
+/* Button full width. */
+
+.btn-block {
+
+	@apply w-full;
+}
+
+/* Button icons. */
+
+.btn-icon {
+	cursor: pointer;
+
+	& svg:focus,
+	& svg:hover,
+	& i:focus,
+	& i:hover {
+		opacity: 0.6;
+	}
+}
+
+/* Button close. */
+
+.btn-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5rem 1rem;
+	z-index: 10;
+}
+
+.btn-close,
+.btn-close:visited {
+	border-color: transparent;
+	background: transparent;
+	color: #fff;
+}
+
+.btn-close:hover,
+.btn-close:focus,
+.btn-close:active,
+.btn-close.is_active {
+	border-color: transparent;
+	background: transparent;
+	color: #fff;
+	opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
+## Fontawesome Buttons Icons.
+--------------------------------------------------------------*/
+
+.icon .wp-block-button__link::before,
+.icon .wp-block-button__link::after {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-left .wp-block-button__link::before {
+	margin-right: theme("spacing.2");
+}
+
+.icon-right .wp-block-button__link::after {
+	margin-left: theme("spacing.2");
+}
+
+/* defining font-family/font-face for each style */
+
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+.icon-solid .wp-block-button__link::before,
+.icon-solid .wp-block-button__link::after,
+.icon-regular .wp-block-button__link::before,
+.icon-regular .wp-block-button__link::after,
+.icon-light .wp-block-button__link::before,
+.icon-light .wp-block-button__link::after {
+	font-family: "Font Awesome 5 Pro";
+}
+
+.icon-brand .wp-block-button__link::before,
+.icon-brand .wp-block-button__link::after {
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
+}
+
+/* stylelint-enable font-family-no-missing-generic-family-keyword */
+
+/* defining the right weight for each style */
+
+.icon-solid .wp-block-button__link::before,
+.icon-solid .wp-block-button__link::after {
+	font-weight: 900;
+}
+
+.icon-regular .wp-block-button__link::before,
+.icon-regular .wp-block-button__link::after {
+	font-weight: 400;
+}
+
+.icon-light .wp-block-button__link::before,
+.icon-light .wp-block-button__link::after {
+	font-weight: 300;
+}
+
+/* duotone icons follow a similar setup, but require use of
+the ::after pseudo-element and more styling setup */
+
+.icon-duotone .wp-block-button__link {
+	position: relative;
+}
+
+/* make space for the width of the absolutely positioned icon */
+
+.icon-duotone.btn-nosize.icon-left .wp-block-button__link,
+.icon-duotone.btn-sm.icon-left .wp-block-button__link,
+.icon-duotone.btn-short.icon-left .wp-block-button__link {
+	padding-left: 2rem;
+}
+
+.icon-duotone.btn-nosize.icon-right .wp-block-button__link,
+.icon-duotone.btn-sm.icon-right .wp-block-button__link,
+.icon-duotone.btn-short.icon-right .wp-block-button__link {
+	padding-right: 2rem;
+}
+
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
+.icon-duotone .wp-block-button__link::before,
+.icon-duotone .wp-block-button__link::after {
+	font-family: "Font Awesome 5 Duotone";
+	font-weight: 900;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.25em;
+	text-align: center;
+}
+
+/* stylelint-enable font-family-no-missing-generic-family-keyword */
+
+.icon-duotone.icon-left .wp-block-button__link::before,
+.icon-duotone.icon-left .wp-block-button__link::after {
+	left: 0.5rem;
+}
+
+.icon-duotone.icon-right .wp-block-button__link::before,
+.icon-duotone.icon-right .wp-block-button__link::after {
+	right: 0.5rem;
+}
+
+.icon-duotone .wp-block-button__link::before {
+	color: var(--fa-primary-color, inherit);
+	opacity: 1;
+	opacity: var(--fa-primary-opacity, 1);
+}
+
+.icon-duotone .wp-block-button__link::after {
+	color: var(--fa-secondary-color, inherit);
+	opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+/* defining the right unicode values for each icon */
+
+/* long-arrow-right */
+
+.icon-long-arrow-right.icon-left .wp-block-button__link::before,
+.icon-long-arrow-right.icon-right .wp-block-button__link::after,
+.icon-long-arrow-right.icon-duotone .wp-block-button__link::before {
+	content: "\f178";
+}
+
+.icon-long-arrow-right.icon-duotone .wp-block-button__link::after {
+	content: "\10f178";
+}
+
+/* angle-right */
+
+.icon-angle-right.icon-left .wp-block-button__link::before,
+.icon-angle-right.icon-right .wp-block-button__link::after,
+.icon-angle-right.icon-duotone .wp-block-button__link::before {
+	content: "\f105";
+}
+
+.icon-angle-right.icon-duotone .wp-block-button__link::after {
+	content: "\10f105";
+}
+
+/* chevron-circle-right */
+
+.icon-chevron-circle-right.icon-left .wp-block-button__link::before,
+.icon-chevron-circle-right.icon-right .wp-block-button__link::after,
+.icon-chevron-circle-right.icon-duotone .wp-block-button__link::before {
+	content: "\f138";
+}
+
+.icon-chevron-circle-right.icon-duotone .wp-block-button__link::after {
+	content: "\10f138";
+}
+
+/* arrow-circle-right */
+
+.icon-arrow-circle-right.icon-left .wp-block-button__link::before,
+.icon-arrow-circle-right.icon-right .wp-block-button__link::after,
+.icon-arrow-circle-right.icon-duotone .wp-block-button__link::before {
+	content: "\f0a9";
+}
+
+.icon-arrow-circle-right.icon-duotone .wp-block-button__link::after {
+	content: "\10f0a9";
+}

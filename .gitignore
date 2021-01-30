@@ -1,0 +1,6 @@
+/uploads
+/plugins
+/plugins/*
+/mu-plugins
+/mu-plugins/*
+.DS_Store

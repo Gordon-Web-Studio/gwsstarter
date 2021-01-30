@@ -1,0 +1,738 @@
+# Copyright (C) 2021 WP Rig
+# This file is distributed under the same license as the WP Rig package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Rig\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: The WP Rig Contributors\n"
+"Report-Msgid-Bugs-To: WP Rig\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:44
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:60
+msgid "Comments are closed."
+msgstr ""
+
+#: header.php:54
+msgid "Skip to content"
+msgstr ""
+
+#: inc/Accessibility/Component.php:69
+msgid "Expand child menu"
+msgstr ""
+
+#: inc/Accessibility/Component.php:70
+msgid "Collapse child menu"
+msgstr ""
+
+#. translators: 1: required WP version number, 2: required PHP version number, 3: available WP version number, 4: available PHP version number
+#: inc/back-compat.php:25
+msgid "WP Rig requires at least WordPress version %1$s and PHP version %2$s. You are running versions %3$s and %3$s respectively. Please update and try again."
+msgstr ""
+
+#. translators: 1: required WP version number, 2: available WP version number
+#: inc/back-compat.php:30
+msgid "WP Rig requires at least WordPress version %1$s. You are running version %2$s. Please update and try again."
+msgstr ""
+
+#. translators: 1: required PHP version number, 2: available PHP version number
+#: inc/back-compat.php:35
+msgid "WP Rig requires at least PHP version %1$s. You are running version %2$s. Please update and try again."
+msgstr ""
+
+#. translators: get the title of the video.
+#. translators: get the title of the video.
+#: inc/Carousel/Component.php:157, inc/Custom_Block/Component.php:902
+msgid "Video Background"
+msgstr ""
+
+#: inc/Comments/Component.php:132
+msgid "New comment(s)"
+msgstr ""
+
+#: inc/Customizer/Component.php:77
+msgid "Theme Options"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:89
+msgid "Hero"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:90
+msgid "Custom hero block."
+msgstr ""
+
+#: inc/Custom_Block/Component.php:157, template-parts/blocks/content-media/content-media.php:137, template-parts/blocks/hero/hero.php:58
+msgid "Tagline"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:165, template-parts/blocks/content-media/content-media.php:141, template-parts/blocks/hero/hero.php:62
+msgid "Headline"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:174
+msgid "Some content here"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:186
+msgid "Container Wrapper"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:187
+msgid "Custom block container."
+msgstr ""
+
+#: inc/Custom_Block/Component.php:244
+msgid "Container"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:253
+msgid "[ Add Blocks Here ]"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:268
+msgid "Content Media"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:269
+msgid "Content Media Block."
+msgstr ""
+
+#: inc/Custom_Block/Component.php:362
+msgid "Brands and Logos"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:363
+msgid "Brands and Logos."
+msgstr ""
+
+#: inc/Custom_Block/Component.php:392
+msgid "ROI Calculator"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:393
+msgid "ROI Calculator."
+msgstr ""
+
+#: inc/Custom_Block/Component.php:422
+msgid "Video with painpoint content"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:423
+msgid "Video with painpoint content custom block."
+msgstr ""
+
+#: inc/Custom_Block/Component.php:455
+msgid "Boxed content with icon"
+msgstr ""
+
+#: inc/Custom_Block/Component.php:456
+msgid "Boxed content with icon custom block."
+msgstr ""
+
+#: inc/Custom_Block_Category/Component.php:55
+msgid "Custom Blocks"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:54
+msgid "Hero with Media Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:55
+msgctxt "Block Pattern Description for Hero with Media Content."
+msgid "A Hero with Content Media."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:64
+msgid "Inverted Hero with Media Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:65
+msgctxt "Block Pattern Description for Inverted Hero with Media Content."
+msgid "A Hero with Content Media."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:74
+msgid "Brands and Logo Grid"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:75
+msgctxt "Block Pattern Description for Brands and Logo Grid."
+msgid "A brand and Logo Grid."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:84
+msgid "Media Content with list"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:85
+msgctxt "Block Pattern Description for Media Content with list."
+msgid "Media Content with list."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:94
+msgid "Quote Media Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:95
+msgctxt "Block Pattern Description for Quote Media Content."
+msgid "Quote Media Content."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:104
+msgid "Form Media Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:105
+msgctxt "Block Pattern Description for Form Media Content."
+msgid "Form Media Content."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:114
+msgid "4 Column Content Grid"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:115
+msgctxt "Block Pattern Description for 4 Column Content Grid."
+msgid "4 Column Content Grid."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:124
+msgid "3 Column Content Grid"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:125
+msgctxt "Block Pattern Description for 3 Column Content Grid."
+msgid "3 Column Content Grid."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:134
+msgid "3 Column Content Grid left aligned"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:135
+msgctxt "Block Pattern Description for 3 Column Content Grid left aligned."
+msgid "3 Column Content Grid left aligned."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:144
+msgid "3 Column Boxed Content Grid"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:145
+msgctxt "Block Pattern Description for 3 Column Boxed Content Grid."
+msgid "3 Column Boxed Content Grid."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:154
+msgid "2 Column Boxed Content Grid"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:155
+msgctxt "Block Pattern Description for 2 Column Boxed Content Grid."
+msgid "2 Column Boxed Content Grid."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:164
+msgid "Contact Us Grid"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:165
+msgctxt "Block Pattern Description for Contact Us Grid."
+msgid "Contact Us Grid."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:174
+msgid "Video with 4 painpoint content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:175
+msgctxt "Block Pattern Description for Video with 4 painpoint content."
+msgid "Video with 4 painpoint content."
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:184
+msgid "Success Story Hero"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:185
+msgctxt "Block Pattern Description for Success Story Hero."
+msgid "Success Story Hero Template"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:194
+msgid "Success Story Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:195
+msgctxt "Block Pattern Description for Success Story Content."
+msgid "Success Story Content Template"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:204
+msgid "Centered Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:205
+msgctxt "Block Pattern Description for Centered Content."
+msgid "Centered Content Template"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:225
+msgctxt "Block pattern category"
+msgid "Hero"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:230
+msgctxt "Block pattern category"
+msgid "Media Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:235
+msgctxt "Block pattern category"
+msgid "Grid"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:240
+msgctxt "Block pattern category"
+msgid "Layout"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:245
+msgctxt "Block pattern category"
+msgid "Content"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:250
+msgctxt "Block pattern category"
+msgid "Video"
+msgstr ""
+
+#: inc/Custom_Block_Pattern/Component.php:255
+msgctxt "Block pattern category"
+msgid "Success Story"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:92
+msgid "Content Type"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:99
+msgid "XMED Oxygen & Medical Equipment"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:107
+msgid "“Gordon Web Studio is a partner you can depend on. We’ve more than doubled the revenue we did five years ago.”"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:114
+msgid "John Skoro<br>Founder & President, XMED"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:165
+msgid "Key Results"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:174
+msgid "Result One"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:174
+msgid "Result Two"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:174
+msgid "Result Three"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:174
+msgid "Result Four"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:205
+msgid "Overview"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:226
+msgid "Challenges"
+msgstr ""
+
+#: inc/Custom_Block_Template/Component.php:247
+msgid "Results"
+msgstr ""
+
+#: inc/Custom_Header/Component.php:93
+msgid "Header Options"
+msgstr ""
+
+#: inc/Custom_Header/Component.php:105
+msgid "Enable Sticky Header on Complete Website"
+msgstr ""
+
+#: inc/Custom_Header/Component.php:111
+msgid "Login"
+msgstr ""
+
+#: inc/Custom_Header/Component.php:118
+msgid "Login Button Text"
+msgstr ""
+
+#: inc/Custom_Header/Component.php:140
+msgid "Schedule a Demo"
+msgstr ""
+
+#: inc/Custom_Header/Component.php:147
+msgid "Schedule a Demo Button Text"
+msgstr ""
+
+#: inc/Custom_Logo_Alternative/Component.php:48
+msgid "Alternative Logos"
+msgstr ""
+
+#: inc/Custom_Logo_Alternative/Component.php:63
+msgid "Upload a logo for transparent header"
+msgstr ""
+
+#: inc/Custom_Logo_Alternative/Component.php:81
+msgid "Upload a mobile version logo"
+msgstr ""
+
+#: inc/Custom_Logo_Alternative/Component.php:99
+msgid "Upload a mobile version logo for transparent header"
+msgstr ""
+
+#: inc/Custom_Topbar/Component.php:63
+msgid "Topbar"
+msgstr ""
+
+#: inc/Custom_Topbar/Component.php:75
+msgid "Enable Topbar"
+msgstr ""
+
+#: inc/Custom_Topbar/Component.php:87
+msgid "Topbar in homepage only"
+msgstr ""
+
+#: inc/Custom_Topbar/Component.php:100
+msgid "Topbar Text"
+msgstr ""
+
+#: inc/Custom_Topbar/Component.php:106
+msgid "Learn More"
+msgstr ""
+
+#: inc/Custom_Topbar/Component.php:113
+msgid "Topbar Button Text"
+msgstr ""
+
+#: inc/Editor/Component.php:69, inc/Nav_Menus/Component.php:74
+msgid "Primary"
+msgstr ""
+
+#: inc/Editor/Component.php:74
+msgid "Primary Dark"
+msgstr ""
+
+#: inc/Editor/Component.php:79
+msgid "Primary Light"
+msgstr ""
+
+#: inc/Editor/Component.php:84
+msgid "Secondary"
+msgstr ""
+
+#: inc/Editor/Component.php:89
+msgid "Tertiary"
+msgstr ""
+
+#: inc/Editor/Component.php:94
+msgid "Black"
+msgstr ""
+
+#: inc/Editor/Component.php:99
+msgid "Gray"
+msgstr ""
+
+#: inc/Editor/Component.php:104
+msgid "White"
+msgstr ""
+
+#: inc/Editor/Component.php:121
+msgid "Small"
+msgstr ""
+
+#: inc/Editor/Component.php:122
+msgid "S"
+msgstr ""
+
+#: inc/Editor/Component.php:127
+msgid "Base"
+msgstr ""
+
+#: inc/Editor/Component.php:128
+msgid "B"
+msgstr ""
+
+#: inc/Editor/Component.php:133
+msgid "Large"
+msgstr ""
+
+#: inc/Editor/Component.php:134
+msgid "L"
+msgstr ""
+
+#: inc/Editor/Component.php:139, inc/Editor/Component.php:140
+msgid "H4"
+msgstr ""
+
+#: inc/Editor/Component.php:145, inc/Editor/Component.php:146
+msgid "H3"
+msgstr ""
+
+#: inc/Editor/Component.php:151, inc/Editor/Component.php:152
+msgid "H2"
+msgstr ""
+
+#: inc/Editor/Component.php:157, inc/Editor/Component.php:158
+msgid "H1"
+msgstr ""
+
+#: inc/Lazyload/Component.php:89
+msgid "Lazy-load on (default)"
+msgstr ""
+
+#: inc/Lazyload/Component.php:90
+msgid "Lazy-load off"
+msgstr ""
+
+#: inc/Lazyload/Component.php:111
+msgid "Lazy-load images"
+msgstr ""
+
+#: inc/Lazyload/Component.php:114
+msgid "Lazy-loading images means images are loaded only when they are in view. Improves performance, but can result in content jumping around on slower connections."
+msgstr ""
+
+#: inc/Nav_Menus/Component.php:75
+msgid "Footer Menu One"
+msgstr ""
+
+#: inc/Nav_Menus/Component.php:76
+msgid "Footer Menu Two"
+msgstr ""
+
+#: inc/Sidebars/Component.php:81
+msgid "Sidebar"
+msgstr ""
+
+#: inc/Sidebars/Component.php:83, inc/Sidebars/Component.php:95, inc/Sidebars/Component.php:107, inc/Sidebars/Component.php:119, inc/Sidebars/Component.php:131
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/Sidebars/Component.php:93
+msgid "Footer Info"
+msgstr ""
+
+#: inc/Sidebars/Component.php:105
+msgid "Footer Menu Column One"
+msgstr ""
+
+#: inc/Sidebars/Component.php:117
+msgid "Footer Menu Column Two"
+msgstr ""
+
+#: inc/Sidebars/Component.php:129
+msgid "Footer Contact Info"
+msgstr ""
+
+#. translators: %s: stylesheet handle
+#: inc/Styles/Component.php:249
+msgid "Invalid theme stylesheet handle: %s"
+msgstr ""
+
+#. translators: 1: classname/type of the variable, 2: interface name
+#: inc/Template_Tags.php:54
+msgid "The theme templating component %1$s does not implement the %2$s interface."
+msgstr ""
+
+#. translators: %s: template tag name
+#: inc/Template_Tags.php:81
+msgid "The template tag %s does not exist."
+msgstr ""
+
+#. translators: 1: template tag method name, 2: component class name
+#: inc/Template_Tags.php:110
+msgid "The template tag method %1$s registered by theme component %2$s must either be a callable or an array."
+msgstr ""
+
+#. translators: 1: template tag method name, 2: component class name
+#: inc/Template_Tags.php:121
+msgid "The template tag method %1$s registered by theme component %2$s conflicts with an already registered template tag of the same name."
+msgstr ""
+
+#. translators: 1: classname/type of the variable, 2: interface name
+#: inc/Theme.php:57
+msgid "The theme component %1$s does not implement the %2$s interface."
+msgstr ""
+
+#. translators: %s: slug
+#: inc/Theme.php:120
+msgid "No theme component with the slug %s exists."
+msgstr ""
+
+#: template-parts/blocks/boxed-content-with-icon/boxed-content-with-icon.php:53
+msgid "This is a pain point question?"
+msgstr ""
+
+#: template-parts/blocks/boxed-content-with-icon/boxed-content-with-icon.php:60
+msgid "This is the answer to the pain point question from Gordon Web Studio."
+msgstr ""
+
+#: template-parts/blocks/brands-logos/brands-logos.php:54
+msgid "Trusted by these brands"
+msgstr ""
+
+#: template-parts/blocks/content-media/content-media.php:146
+msgid "Some paragraph content"
+msgstr ""
+
+#: template-parts/blocks/hero/hero.php:67
+msgid "Caption Content"
+msgstr ""
+
+#: template-parts/blocks/latest-posts/latest-posts.php:149
+msgid "There are no posts yet!"
+msgstr ""
+
+#: template-parts/content/entry-attachment.php:33, template-parts/content/entry-page.php:32
+msgid "Previous:"
+msgstr ""
+
+#: template-parts/content/entry-attachment.php:43, template-parts/content/entry-page.php:33
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content/entry-attachment.php:49
+msgid "Post navigation"
+msgstr ""
+
+#. translators: %s: post title
+#: template-parts/content/entry_actions.php:21
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: post title
+#: template-parts/content/entry_actions.php:40
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content/entry_content.php:17
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content/entry_content.php:30
+msgid "Pages:"
+msgstr ""
+
+#. translators: separator between taxonomy terms
+#: template-parts/content/entry_taxonomies.php:24
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: %s: list of taxonomy terms
+#: template-parts/content/entry_taxonomies.php:31
+msgid "Posted in %s"
+msgstr ""
+
+#. translators: %s: list of taxonomy terms
+#: template-parts/content/entry_taxonomies.php:37
+msgid "Tagged %s"
+msgstr ""
+
+#. translators: %s: taxonomy name
+#: template-parts/content/entry_taxonomies.php:44
+msgid "%s:"
+msgstr ""
+
+#: template-parts/content/error-404.php:16
+msgid "It looks like nothing was found at this location"
+msgstr ""
+
+#: template-parts/content/error-500.php:14
+msgid "Oops! Something went wrong."
+msgstr ""
+
+#: template-parts/content/error-offline.php:14
+msgid "Oops! It looks like you&#8217;re offline."
+msgstr ""
+
+#: template-parts/content/error.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content/error.php:38
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content/error.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. translators: %s: search query
+#: template-parts/content/page_header.php:41
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content/page_header.php:22
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content/page_header.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: template-parts/content/pagination.php:13
+msgctxt "previous set of search results"
+msgid "Previous"
+msgstr ""
+
+#: template-parts/content/pagination.php:14
+msgctxt "next set of search results"
+msgid "Next"
+msgstr ""
+
+#: template-parts/content/pagination.php:15
+msgid "Page navigation"
+msgstr ""
+
+#: template-parts/header/navigation.php:16
+msgid "Main menu"
+msgstr ""
+
+#: template-parts/header/navigation.php:39
+msgid "Open menu"
+msgstr ""
+
+#: template-parts/header/navigation.php:49
+msgid "Menu"
+msgstr ""

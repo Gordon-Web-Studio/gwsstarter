@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+
+/* stylelint-disable */
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* stylelint-enable */
+
+/**
+ * Inherit box-sizing to make it easier to change the property for
+ * components that leverage other behavior; see
+ * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* Dark mode .is-inverted */
+
+.site .is-inverted,
+body.is-inverted {
+
+	@apply text-white bg-primary;
+}
+
+body.is-inverted {
+
+	& .site-header {
+
+		@apply text-white bg-primary;
+	}
+}

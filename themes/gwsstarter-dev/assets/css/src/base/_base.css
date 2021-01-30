@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+# Global styles
+--------------------------------------------------------------*/
+
+[class~="ui-"] > *:last-child {
+	margin: 0;
+}
+
+.list {
+	list-style: none;
+	padding-left: 0;
+
+	& ul {
+		padding-left: 1rem;
+		list-style: none;
+	}
+}
+
+.list-inline {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: -5px;
+	padding-left: 0;
+
+	& > li {
+		display: inline-block;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+}
+
+/* acf map */
+
+.acf-map,
+.map {
+	width: 100%;
+	min-height: 500px;
+	border: 1px solid #e2e8f0;
+	margin: 20px 0;
+}
+
+/* Fixes potential theme css conflict. */
+
+.acf-map img,
+.map img {
+	max-width: inherit !important;
+}
+
+.facetwp-template {
+
+	@apply container mx-auto px-0 w-full flex justify-between flex-wrap;
+
+	& > article {
+		width: 100%;
+		margin: 0 1rem;
+
+		@screen lg {
+			width: calc(33% - 1rem);
+			margin: 0.5rem;
+		}
+
+		& img {
+			margin-bottom: 2.5rem;
+			height: 300px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.facetwp-facet {
+	text-align: center;
+}
+
+.facetwp-facet .facetwp-load-more {
+
+	@apply ui-btn btn-primary;
+}
+
+.rounded-portrait img {
+	border-radius: 50px;
+}
+
+.ab-block-accordion details summary.ab-accordion-title {
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	list-style: none;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.ab-block-accordion details summary.ab-accordion-title::after {
+	position: absolute;
+	right: 0;
+	content: "Read More";
+	color: #2b7e7e;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+.ab-block-accordion details summary.ab-accordion-title::-webkit-details-marker {
+	display: none;
+}
+
+.ab-block-accordion details[open] summary.ab-accordion-title::after {
+	content: "Hide Text";
+}

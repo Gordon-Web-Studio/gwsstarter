@@ -1,0 +1,261 @@
+/*--------------------------------------------------------------
+# Content Styles
+--------------------------------------------------------------*/
+
+@import "components/_wordpress.css";
+
+/*--------------------------------------------------------------
+# Post and page content
+--------------------------------------------------------------*/
+
+.entry-meta,
+.entry-footer {
+	font-family: theme("fontFamily.heading");
+	font-stretch: condensed;
+	font-size: 80%;
+}
+
+.entry-meta {
+	margin: 1em 0;
+}
+
+/* Hides the update date and time. */
+
+.updated:not(.published) {
+	display: none;
+}
+
+.post-thumbnail img {
+	margin: 0 auto;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+	min-height: 400px;
+}
+
+.page-content > *,
+.entry-content > *,
+.entry-summary > * {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	max-width: theme("screens.lg");
+}
+
+.page-header,
+.entry-header,
+.entry-footer,
+.site-info,
+.post-navigation,
+.page-navigation,
+.comments-area {
+	margin: 3em auto;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	max-width: theme("screens.lg");
+}
+
+@screen lg {
+
+	.page-content > *,
+	.entry-content > *,
+	.entry-summary > *,
+	.page-header,
+	.entry-header,
+	.entry-footer,
+	.site-info,
+	.post-navigation,
+	.page-navigation,
+	.comments-area {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.entry-content p,
+p.wp-block {
+	margin-bottom: 1.5em;
+}
+
+.entry-content ul,
+ul.wp-block,
+.entry-content ol,
+ol.wp-block {
+	padding-right: 2.5em;
+	padding-left: 2.5em;
+}
+
+.entry-content ul ul,
+ul.wp-block ul,
+.entry-content ol ol,
+ol.wp-block ol {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
+
+/* Align .more-link with the content. */
+
+.entry-content > .more-link {
+	display: block;
+}
+
+.page-links {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+
+.entry-footer span {
+	margin-right: 1em;
+}
+
+.entry-footer {
+	clear: both;
+	padding: 1.5em 1.5rem 3em;
+	border-bottom: 1px solid theme("colors.gray.300");
+}
+
+@screen md {
+
+	.entry-footer {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+}
+
+/*--------------------------------------------------------------
+## Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+	float: left;
+	margin-right: 1.5rem;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1.5rem;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignwide {
+
+	@apply mx-auto px-4 w-full;
+}
+
+@screen sm {
+
+	.alignwide {
+		max-width: theme("screens.md");
+		padding-left: theme("spacing.8");
+		padding-right: theme("spacing.8");
+	}
+}
+
+@screen md {
+
+	.alignwide {
+		max-width: theme("screens.lg");
+	}
+}
+
+@screen lg {
+
+	.alignwide {
+		max-width: theme("screens.2xl");
+	}
+}
+
+.alignfull {
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*--------------------------------------------------------------
+## Custom block colors.
+--------------------------------------------------------------*/
+
+.has-theme-primary-color,
+.has-theme-primary-color a {
+	color: theme("colors.primary");
+}
+
+.has-theme-primary-background-color {
+	background-color: theme("colors.primary");
+}
+
+.has-theme-primary-dark-color,
+.has-theme-primary-dark-color a {
+	color: theme("colors.primary-dark");
+}
+
+.has-theme-primary-dark-background-color {
+	background-color: theme("colors.primary-dark");
+}
+
+.has-theme-primary-light-color,
+.has-theme-primary-light-color a {
+	color: theme("colors.primary-light");
+}
+
+.has-theme-primary-light-background-color {
+	background-color: theme("colors.primary-light");
+}
+
+.has-theme-secondary-color,
+.has-theme-secondary-color a {
+	color: theme("colors.secondary");
+}
+
+.has-theme-secondary-background-color {
+	background-color: theme("colors.secondary");
+}
+
+.has-theme-tertiary-color,
+.has-theme-tertiary-color a {
+	color: theme("colors.tertiary");
+}
+
+.has-theme-tertiary-background-color {
+	background-color: theme("colors.tertiary");
+}
+
+.has-theme-black-color,
+.has-theme-black-color a {
+	color: theme("colors.black");
+}
+
+.has-theme-black-background-color {
+	background-color: theme("colors.black");
+}
+
+.has-theme-gray-color,
+.has-theme-gray-color a {
+	color: theme("colors.gray.300");
+}
+
+.has-theme-gray-background-color {
+	background-color: theme("colors.gray.300");
+}
+
+.has-theme-white-color,
+.has-theme-white-color a {
+	color: theme("colors.white");
+}
+
+.has-theme-white-background-color {
+	background-color: theme("colors.white");
+}

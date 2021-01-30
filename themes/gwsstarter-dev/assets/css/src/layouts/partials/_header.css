@@ -1,0 +1,92 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.header-image {
+	margin: 0 auto;
+}
+
+.header-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+.custom-logo-link {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.default-logo {
+	width: 200px;
+}
+
+.site-title {
+	margin: 0 1em;
+	font-family: theme("fontFamily.heading");
+	font-stretch: condensed;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: theme("colors.primary");
+}
+
+.site-title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.site-description {
+	margin: 0.4375em 0 0;
+	font-family: theme("fontFamily.heading");
+	font-stretch: condensed;
+	font-size: 17px;
+	font-weight: inherit;
+	line-height: 1.4;
+	word-wrap: break-word;
+	color: #757575;
+}
+
+.is-sticky {
+
+	& .site-topbar,
+	& .site-header {
+		position: sticky;
+		top: 0;
+	}
+}
+
+.is-transparent .site-header,
+.is-transparent.is-sticky  .site-header {
+	position: fixed;
+	width: 100%;
+}
+
+.is-transparent:not(.scrolled) .site-header,
+.is-transparent.is-sticky:not(.scrolled) .site-header {
+	background-color: transparent;
+	color: theme("colors.white");
+
+	& .primary-menu-container > ul > li > a {
+		color: theme("colors.white");
+	}
+
+	& .nav--toggle-sub .dropdown-symbol {
+		border-color: theme("colors.white");
+	}
+}
+
+.site-branding {
+	display: inline-block;
+	text-align: center;
+}
+
+.ui-menu-toggle {
+	position: relative;
+	display: block;
+	padding: 0.25rem 0.5rem;
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid transparent;
+	outline: 0;
+	font-size: 1.25rem;
+}

@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Extending Containers
+--------------------------------------------------------------*/
+
+.full-container {
+
+	@apply mx-auto px-0 w-full;
+}
+
+.fluid-container {
+
+	@apply mx-auto px-4 w-full;
+}
+
+@screen md {
+
+	.fluid-container {
+
+		@apply mx-auto px-8 w-full;
+	}
+}
+
+@screen xl {
+
+	.fluid-container {
+
+		@apply px-0 w-full;
+		max-width: calc(100% - 6rem);
+	}
+}

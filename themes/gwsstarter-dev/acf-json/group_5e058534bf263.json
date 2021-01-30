@@ -1,0 +1,229 @@
+{
+    "key": "group_5e058534bf263",
+    "title": "Component – Animation Custom Instances",
+    "fields": [
+        {
+            "key": "field_5e05866c0ec39",
+            "label": "Custom Instances",
+            "name": "custom_instances",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5e058674c475d": {
+                    "key": "layout_5e058674c475d",
+                    "name": "opacity",
+                    "label": "Opacity",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058ad90b6c1",
+                            "label": "Values",
+                            "name": "values",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e058a81c106a"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058b050b6c2": {
+                    "key": "layout_5e058b050b6c2",
+                    "name": "translate-x",
+                    "label": "Move X",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058b050b6c3",
+                            "label": "Values",
+                            "name": "values",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e058a81c106a"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058b4b0b6c4": {
+                    "key": "layout_5e058b4b0b6c4",
+                    "name": "translate-y",
+                    "label": "Move Y",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058b4b0b6c5",
+                            "label": "Values",
+                            "name": "values",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e058a81c106a"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058b740b6c6": {
+                    "key": "layout_5e058b740b6c6",
+                    "name": "scale",
+                    "label": "Scale",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058b740b6c7",
+                            "label": "Values",
+                            "name": "values",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e058a81c106a"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058b880b6c8": {
+                    "key": "layout_5e058b880b6c8",
+                    "name": "rotate",
+                    "label": "Rotate",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058b880b6c9",
+                            "label": "Values",
+                            "name": "values",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e058a81c106a"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5e058b970b6ca": {
+                    "key": "layout_5e058b970b6ca",
+                    "name": "blur",
+                    "label": "Blur",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e058b970b6cb",
+                            "label": "Values",
+                            "name": "values",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5e058a81c106a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                }
+            },
+            "button_label": "Add Custom Animation",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1577473895
+}

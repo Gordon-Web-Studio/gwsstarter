@@ -1,0 +1,129 @@
+{
+    "key": "group_5e058a81c106a",
+    "title": "Component - Animations Custom Values",
+    "fields": [
+        {
+            "key": "field_5e04cf8241885",
+            "label": "Values",
+            "name": "custom_values",
+            "type": "repeater",
+            "instructions": "Set position (pos) in %, and values (val) in px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 3,
+            "layout": "block",
+            "button_label": "Add Instance",
+            "sub_fields": [
+                {
+                    "key": "field_5e05b0fa49839",
+                    "label": "Start Pos",
+                    "name": "start_pos",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5e05b09149838",
+                    "label": "Start Val",
+                    "name": "start_value",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": -500,
+                    "max": 500,
+                    "step": 1
+                },
+                {
+                    "key": "field_5e05b12f4983a",
+                    "label": "Stop Pos",
+                    "name": "stop_pos",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 100,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 0,
+                    "max": 200,
+                    "step": 1
+                },
+                {
+                    "key": "field_5e05aed120e89",
+                    "label": "Stop Val",
+                    "name": "stop_value",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": -500,
+                    "max": 500,
+                    "step": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1577484061
+}

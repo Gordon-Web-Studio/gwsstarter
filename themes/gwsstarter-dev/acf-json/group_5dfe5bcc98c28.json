@@ -1,0 +1,380 @@
+{
+    "key": "group_5dfe5bcc98c28",
+    "title": "Component – Foreground Video",
+    "fields": [
+        {
+            "key": "field_5e0598844f2b8",
+            "label": "Foreground Video",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c9fea1c2f5a6",
+            "label": "Add Foreground Video",
+            "name": "add_foreground_video",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e06a7fdd563e",
+            "label": "<i class=\"fab fa-youtube\"><\/i> Video",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c9fea1c2f5a6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c9fe99537ebf",
+            "label": "Foreground Video",
+            "name": "foreground_video",
+            "type": "oembed",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c9fea1c2f5a6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
+            "key": "field_5e06a04b02700",
+            "label": "<i class=\"fas fa-play-circle\"><\/i> Icon",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c9fea1c2f5a6",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5c9fe99537ebf",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5dfdad8aa118c",
+            "label": "Foreground Video Trigger",
+            "name": "foreground_video_trigger",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c9fea1c2f5a6",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5c9fe99537ebf",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5dfdaf24a118d",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "fad fa-play-circle": "<i class=\"fad fa-play-circle\"><\/i> fad fa-play-circle",
+                        "fal fa-play-circle": "<i class=\"fal fa-play-circle\"><\/i> fal fa-play-circle",
+                        "far fa-play-circle": "<i class=\"far fa-play-circle\"><\/i> far fa-play-circle",
+                        "fas fa-play-circle": "<i class=\"fas fa-play-circle\"><\/i> fas fa-play-circle",
+                        "fad fa-play": "<i class=\"fad fa-play\"><\/i> fad fa-play",
+                        "fal fa-play": "<i class=\"fal fa-play\"><\/i> fal fa-play",
+                        "far fa-play": "<i class=\"far fa-play\"><\/i> far fa-play",
+                        "fas fa-play": "<i class=\"fas fa-play\"><\/i> fas fa-play",
+                        "fab fa-youtube": "<i class=\"fab fa-youtube\"><\/i> fab fa-youtube"
+                    },
+                    "default_value": [
+                        "fad fa-play-circle"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5dfddb5da118e",
+                    "label": "Icon Color",
+                    "name": "icon_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
+                },
+                {
+                    "key": "field_5dfddb74a118f",
+                    "label": "Icon Label",
+                    "name": "icon_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Watch video",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5dfe5cf2e55cd",
+                    "label": "Icon Label Position",
+                    "name": "icon_label_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5dfddb74a118f",
+                                "operator": "!=empty"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "top": "Top",
+                        "bottom": "Bottom",
+                        "left": "Left",
+                        "right": "Right"
+                    },
+                    "default_value": [
+                        "bottom"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5dfddc32a1190",
+                    "label": "Icon Position",
+                    "name": "icon_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "relative": "Relative to Content",
+                        "absolute": "Absolute Center",
+                        "custom": "Custom"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5dfe563c0c8b5",
+                    "label": "Icon Position Top",
+                    "name": "icon_position_top",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5dfddc32a1190",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 50,
+                    "min": 0,
+                    "max": 100,
+                    "step": "",
+                    "prepend": "",
+                    "append": "%"
+                },
+                {
+                    "key": "field_5dfe56870c8b6",
+                    "label": "Icon Position Left",
+                    "name": "icon_position_left",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5dfddc32a1190",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 50,
+                    "min": 0,
+                    "max": 100,
+                    "step": "",
+                    "prepend": "",
+                    "append": "%"
+                }
+            ]
+        },
+        {
+            "key": "field_5e06a17b51a28",
+            "label": "Accordion Ends",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c9fea1c2f5a6",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5c9fe99537ebf",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1577494797
+}

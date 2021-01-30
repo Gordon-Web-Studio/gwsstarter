@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+# Block: Video with painpoint content
+--------------------------------------------------------------*/
+
+.block-video-with-painpoint-content {
+
+	& .block-boxed-content-with-icon {
+
+		@apply lg:w-80;
+	}
+
+	& .painpoint-icon-container {
+
+		@apply p-0;
+	}
+
+	& .block-boxed-content-with-icon:nth-child(1) {
+
+		@apply lg:absolute lg:top-5 lg:left-0 lg:transform lg:-translate-x-3/4;
+	}
+
+	& .block-boxed-content-with-icon:nth-child(2) {
+
+		@apply lg:absolute lg:top-5 lg:right-0 lg:transform lg:translate-x-3/4;
+	}
+
+	& .block-boxed-content-with-icon:nth-child(3) {
+
+		@apply lg:absolute lg:bottom-5 lg:left-0 lg:transform lg:-translate-x-3/4;
+	}
+
+	& .block-boxed-content-with-icon:nth-child(4) {
+
+		@apply lg:absolute lg:bottom-5 lg:right-0 lg:transform lg:translate-x-3/4;
+	}
+}
+
+.wp-admin .block-video-with-painpoint-content {
+
+	& .block-boxed-content-with-icon {
+
+		@apply lg:w-full lg:relative lg:top-auto lg:bottom-auto lg:left-auto lg:right-auto lg:transform-none;
+	}
+
+	& .painpoint-item {
+
+		@apply lg:w-full;
+	}
+}

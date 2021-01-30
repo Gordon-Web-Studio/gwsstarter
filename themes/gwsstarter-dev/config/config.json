@@ -1,0 +1,51 @@
+{
+  "theme": {
+    "slug": "gwsstarter-theme",
+    "name": "GSM Starter Theme",
+    "author": "Gordon Web Studio",
+    "PHPNamespace": "WP_GWSStarter\\WP_GWSStarter"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "https://gwsstarter.wp",
+      "bypassPort": "81",
+      "https": true
+    },
+    "styles": {
+      "stage": 3,
+      "autoprefixer": {
+        "grid": false
+      },
+      "importFrom": [
+        "_custom-media.css",
+        "_mixins.css"
+      ],
+      "features": {
+        "custom-media-queries": true,
+        "custom-properties": true,
+        "nesting-rules": true
+      }
+    },
+    "debug": {
+      "styles": true,
+      "scripts": true,
+      "phpcs": true
+    },
+    "tailwindcss": {
+      "config": "./tailwind-gwsstarter.config.js",
+      "purgecss": true
+    }
+  },
+  "export": {
+    "compress": true,
+    "generatePotFile": true,
+    "filesToCopy": [
+      "LICENSE",
+      "readme.txt",
+      "screenshot.png",
+      "acf-json/*",
+      "assets/libs/**/*"
+    ]
+  }
+}

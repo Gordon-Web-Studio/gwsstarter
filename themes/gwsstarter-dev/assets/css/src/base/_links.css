@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+
+/* stylelint-disable no-duplicate-selectors */
+
+a,
+a:visited {
+
+	@apply text-primary outline-none no-underline;
+}
+
+a:hover,
+a:focus,
+a:active {
+
+	@apply text-primary-dark outline-none;
+}
+
+a:focus {
+
+	@apply outline-green;
+}
+
+a:hover,
+a:active {
+
+	@apply outline-none;
+}
+
+/* stylelint-enable no-duplicate-selectors */
