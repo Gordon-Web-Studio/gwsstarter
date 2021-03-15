@@ -305,42 +305,6 @@
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
-        },
-        {
-            "key": "field_5ffcc06d4b6a8",
-            "label": "Home Hero",
-            "name": "",
-            "type": "accordion",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 0
-        },
-        {
-            "key": "field_5ffcc0874b6a9",
-            "label": "Use Home Hero",
-            "name": "is_home_hero",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
         }
     ],
     "location": [
@@ -360,5 +324,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1610464948
+    "modified": 1615834536
 }

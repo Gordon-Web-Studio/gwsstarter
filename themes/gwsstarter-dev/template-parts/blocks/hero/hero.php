@@ -56,16 +56,16 @@ wp_rig()->display_block_options(
 				array(
 					'core/paragraph',
 					array(
-						'content' => __( 'Tagline', 'wp-rig' ),
-						'className'   => 'block-tagline',
+						'content'   => __( 'Tagline', 'wp-rig' ),
+						'className' => 'block-tagline',
 					),
 				),
 				array(
 					'core/heading',
 					array(
-						'content' => __( 'Headline', 'wp-rig' ),
-						'className'   => 'block-headline is-style-default',
-						'fontSize'    => 'h2',
+						'content'   => __( 'Headline', 'wp-rig' ),
+						'className' => 'block-headline is-style-default',
+						'fontSize'  => 'h2',
 					),
 				),
 				array(
